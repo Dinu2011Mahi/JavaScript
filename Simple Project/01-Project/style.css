@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+body{
+    text-align: center;
+    padding-top: 10rem ;
+}
+
+h1 {
+    font-size: 100px;
+    margin-bottom: 4rem;
+}
+
+h1 > span{
+    color: tomato;
+}
+
+button{
+    background-color: aqua;
+    border: none;
+    padding: 1rem;
+    font-size: 50px;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color: teal;
+    color: white;
+    rotate: 360deg;
+}
+
