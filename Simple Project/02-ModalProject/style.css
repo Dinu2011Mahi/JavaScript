@@ -1,10 +1,90 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: monospace;
 }
 
-body{
-    background-image: ;
+body {
+    background-image: url("../../Asset/images/nature.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+}
+
+button {
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 15rem;
+    padding: 2rem;
+    border: 0;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: 0.5s;
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+button:hover {
+    /* transform: rotate(-360deg); */
+    padding: 2.5rem;
+    font-size: 35px;
+    color: tomato;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal .modal_overlay {
+    background-image: url(../../Asset/images/Water.webp);
+    background-size: cover;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    min-width: 350px;
+    width: 400px;
+    min-height: 250px;
+    height: 400px;
+    padding: 2rem;
+}
+
+.modal .modal_overlay .modal_content {
+    position: relative;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    /* background-color: tomato; */
+    min-width: 200px;
+    padding: 2rem;
+}
+
+.modal .modal_overlay .modal_content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    /* padding-top: 60px; */
+}
+
+.modal .modal_overlay .modal_content p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.modal.open{
+    display: flex;
 }
